@@ -1,0 +1,27 @@
+{
+  "plugin_type": "extractors",
+  "name": "tap-theme-parks",
+  "namespace": "tap_theme_parks",
+  "variant": "danielpdwalker",
+  "label": "Theme Parks",
+  "docs": "https://github.com/DanielPDWalker/tap-theme-parks",
+  "repo": "https://github.com/DanielPDWalker/tap-theme-parks",
+  "pip_url": "git+https://github.com/DanielPDWalker/tap-theme-parks.git@v0.0.1",
+  "description": "Tap for theme park data.",
+  "capabilities": [
+    "discover",
+    "state",
+    "catalog",
+    "stream_maps",
+    "about"
+  ],
+  "settings": [
+    {
+      "name": "live_data_array",
+      "kind": "array",
+      "description": "Array of string, containing IDs or slugs of Destinations, parks, attractions, shows or restaurant.",
+      "protected": false
+    }
+  ],
+  "full_description": "Tap for theme park data.\n\n## Settings\n\n\n### live_data_array\n\nArray of string, containing IDs or slugs of Destinations, parks, attractions, shows or restaurant."
+}
