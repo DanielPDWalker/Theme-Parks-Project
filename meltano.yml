@@ -14,3 +14,11 @@ plugins:
   - name: target-postgres
     variant: transferwise
     pip_url: pipelinewise-target-postgres
+jobs:
+- name: tap-theme-parks-to-target-postgres
+  tasks:
+  - tap-theme-parks target-postgres
+schedules:
+- name: theme-park-sync
+  interval: '@daily'
+  job: tap-theme-parks-to-target-postgres
