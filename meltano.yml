@@ -14,6 +14,9 @@ plugins:
   - name: target-postgres
     variant: transferwise
     pip_url: pipelinewise-target-postgres
+  - name: target-jsonl
+    variant: andyh1203
+    pip_url: target-jsonl
 jobs:
 - name: tap-theme-parks-to-target-postgres
   tasks:
