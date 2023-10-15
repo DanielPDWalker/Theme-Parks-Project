@@ -6,7 +6,7 @@
   "label": "Theme Parks",
   "docs": "https://github.com/DanielPDWalker/tap-theme-parks",
   "repo": "https://github.com/DanielPDWalker/tap-theme-parks",
-  "pip_url": "git+https://github.com/DanielPDWalker/tap-theme-parks.git@v0.0.1",
+  "pip_url": "git+https://github.com/DanielPDWalker/tap-theme-parks.git@v0.0.3",
   "description": "Tap for theme park data.",
   "capabilities": [
     "discover",
