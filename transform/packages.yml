@@ -1,2 +1,3 @@
 packages:
-  - local: /home/dw/Documents/dan-repos/dbt-tap-theme-parks
+  - git: https://github.com/DanielPDWalker/dbt-tap-theme-parks
+    revision: v0.1.0

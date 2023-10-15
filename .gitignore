@@ -1,3 +1,7 @@
 /venv
 /.meltano
 .env
+
+# Transform files
+/transform/dbt_packages
+/transform/logs

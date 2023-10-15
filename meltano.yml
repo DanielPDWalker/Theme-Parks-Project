@@ -9,7 +9,7 @@ plugins:
   extractors:
   - name: tap-theme-parks
     variant: danielpdwalker
-    pip_url: git+https://github.com/DanielPDWalker/tap-theme-parks.git@v0.0.1
+    pip_url: git+https://github.com/DanielPDWalker/tap-theme-parks.git@v0.0.3
   loaders:
   - name: target-postgres
     variant: transferwise
@@ -28,7 +28,7 @@ plugins:
 jobs:
 - name: tap-theme-parks-to-target-postgres
   tasks:
-  - tap-theme-parks target-postgres
+  - tap-theme-parks target-postgres dbt:deps dbt:snapshot dbt:run
 schedules:
 - name: theme-park-sync
   interval: '@daily'
