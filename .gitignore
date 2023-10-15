@@ -3,5 +3,5 @@
 .env
 
 # Transform files
-/transforms/dbt_packages
-/transforms/logs
+/transform/dbt_packages
+/transform/logs
