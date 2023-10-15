@@ -1,4 +1,4 @@
-name: theme_park_project
+name: theme_parks_project
 version: "1.0"
 require-dbt-version: [">=1.0.0", "<2.0.0"]
 profile: meltano
@@ -23,4 +23,4 @@ clean-targets:
   - dbt_packages
   - logs
 models:
-  theme_park_project: null
+  theme_parks_project: null
