@@ -25,11 +25,3 @@ plugins:
   - name: files-dbt
     variant: matatika
     pip_url: git+https://github.com/Matatika/files-dbt@v1.0.x.1
-jobs:
-- name: tap-theme-parks-to-target-postgres
-  tasks:
-  - tap-theme-parks target-postgres dbt:deps dbt:snapshot dbt:run
-schedules:
-- name: theme-park-sync
-  interval: '@daily'
-  job: tap-theme-parks-to-target-postgres

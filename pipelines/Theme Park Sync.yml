@@ -1,0 +1,12 @@
+version: pipelines/v0.1
+
+label: Theme Park Sync
+schedule: "0 0 0 * * *"
+
+data_components:
+  - tap-theme-parks
+  - Warehouse
+  - dbt
+
+actions:
+  - meltano run tap-theme-parks target-postgres dbt:deps dbt:snapshot dbt:run
