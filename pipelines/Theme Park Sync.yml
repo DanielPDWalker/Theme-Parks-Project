@@ -9,4 +9,8 @@ data_components:
   - dbt
 
 actions:
-  - meltano run tap-theme-parks target-postgres dbt:deps dbt:snapshot dbt:run
+  - tap-theme-parks
+  - target-postgres
+  - dbt:deps
+  - dbt:snapshot
+  - dbt:run
