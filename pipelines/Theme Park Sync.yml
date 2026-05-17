@@ -10,7 +10,7 @@ data_components:
   - dbt
 
 properties:
-  target-postgres.default_target_schema: raw
+  Warehouse.default_target_schema: raw
   dbt.target_schema: analytics
 
 actions:
