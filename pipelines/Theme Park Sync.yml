@@ -2,15 +2,19 @@ version: pipelines/v0.1
 
 label: Theme Park Sync
 schedule: "0 0 0 * * *"
+timeout: 600
 
 data_components:
   - tap-theme-parks
   - Warehouse
   - dbt
 
+properties:
+  target-postgres.default_target_schema: raw
+  dbt.target_schema: analytics
+
 actions:
   - tap-theme-parks
   - target-postgres
   - dbt:deps
-  - dbt:snapshot
-  - dbt:run
+  - dbt:run-theme-parks-models
